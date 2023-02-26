@@ -17,7 +17,7 @@ int main()
         }
         shape.setPosition(sf::Vector2(shape.getPosition().x+1, shape.getPosition().y+1));
         window.clear();
-        window.draw(shape);
+        window.draw(shape);ss
         window.display();
     }
 
