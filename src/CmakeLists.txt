@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.13)  # CMake version check
+project(simple_game)               # Create project "simple_example"
+
+# Add main.cpp file of project root directory as source file
+set(SFML_STATIC_LIBRARIES TRUE)
+message(${SFML_DIR})
+find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+add_executable(simple_app main.cpp)
+target_link_libraries(simple_app sfml-graphics sfml-audio)
